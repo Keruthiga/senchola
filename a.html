@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+    table,tr,th,td{
+        border: 1px solid black}
+    </style>
+</head>
+<body>
+    <h3>
+        01.Application Form
+    </h3>
+    <form>
+        <fieldset>
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" placeholder="Enter your name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Emter your email"><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="female">
+            <label for="female">Female</label><br><br>
+            <label for="skill">CHOOSE SKILLS</label><br><br>
+            <label for="skill1">HTML</label>
+            <input type="checkbox" id="skill1" name="skill1" value="HTML">
+            <label for="skill2">CSS</label>
+            <input type="checkbox" id="skill2" name="skill2" value="CSS">
+            <label for="skill3">JS</label>
+            <input type="checkbox" id="skill3" name="skill3" value="JS">
+            <label for="skill4">Bootstrap</label>
+            <input type="checkbox" id="skill4" name="skill4" value="Bootstrap">
+            <label for="skill5">React</label>
+            <input type="checkbox" id="skill5" name="skill5" value="React"><br><br>
+            <label for="job">JOB TYPE</label>
+            <select name="job" id="job">
+                <option value="FRONT END DEVELOPER">FRONT END DEVELOPER</option>
+                <option value="BACK END DEVELOPER">BACK END DEVELOPER</option>
+                <option value="FULL STACK DEVELOPER">FULL STACK DEVELOPER</option>
+                <option value="MOBILE APPLICATION DEVELOPER">MOBILE APPLICATION DEVELOPER</option>
+            </select><br><br>
+            <label for="browser">Choose your browser from the list</label>
+            <input list="browser">
+            <datalist id="browser">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Safari"></option>
+                <option value="Opera"></option>
+            </datalist><br><br>
+            <textarea placeholder="Give a brief summary about you"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+        <h3>02.Batch List</h3>
+        <ul style="list-style-type:square;">
+        <li>SENCHOLA UNIVERSITY</li><br>
+        <ol>
+            <li>First Batch</li>
+                <ol style="list-style-type: upper-alpha;">
+                    <li>Ravi</li>
+                    <li>Manol</li>
+                    <li>Sandhiya</li>
+                </ol>
+            <li>Second Batch</li>
+                <ol style="list-style-type:upper-roman">
+                    <li>Sundar</li>
+                    <li>Saranya</li>
+                    <li>Nandhini</li>
+                </ol>
+            <li>Third Batch</li>
+                <ol style="list-style-type: lower-roman;">
+                    <li>Monika</li>
+                    <li>Santhosh</li>
+                    <li>Kannan</li>
+                </ol>
+        </ol>
+        </ul>
+        <h3>03.Course</h3>
+        <table>
+            <tr>
+                <th>S.NO 1</th>
+                <th>S.NO 2</th>
+                <th>S.NO 3</th>
+                <th>S.no 4</th>
+            </tr>
+            <tr>
+                <td rowspan="2">REACTJS</td>
+                <td>HTML</td>
+                <td rowspan="2">REACTJS</td>
+                <td>CSS</td>
+             </tr>
+            <tr>
+                <td>CSS</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td colspan="2">JAVASCRIPT</td>
+                <td colspan="2">BOOTSTRAP</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
